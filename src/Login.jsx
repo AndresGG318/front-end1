@@ -1,43 +1,43 @@
 import React, { useState } from "react";
-import logo from "./assets/img/Logyca-removebg-preview.png" 
+import logo1 from "./assets/img/Logyca-removebg-preview.png";
 
 
 export const Login = (props) => {
-    const [email, setEmail] = useState('');
+
+    const [user, setUser] = useState('');
     const [pass, setPass] = useState('');
+
+    const [submitted,setSubmitted]= useState(false);
+    const [valid,setValid] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(email);
+        if(user && pass) {
+            setValid(true);
+        }
+        setSubmitted(true);
     }
 
+    
+
     return (
+
         
-        <body>
-            
-            <header>
-                <div className="header">
-                    <h1><img src={logo}></img></h1>
-                </div>
-            </header>
-
-            <main>
-                <div className="auth-form-container">
-                    <h2 className="title">Acceso</h2>
-                    <form className="login-form" onSubmit={handleSubmit}>
-                        <label htmlFor="email">Email</label>
-                        <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="Email@gmail.com" id="email" name="email" />
-                        <label htmlFor="password">Contraseña</label>
-                        <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Ingresa tu contraseña" id="password" name="password" />
-                        <button type="submit">Iniciar Sesión</button>
-                    </form>
-                    <button className="link-btn" onClick={() => props.onFormSwitch('register')}>¿No tienes una cuenta? Registrate Aquí</button>
-                </div>
-            </main>
-
-            <footer>
-
-            </footer>
-        </body>
-    )   
+        <div className="auth-form-container">
+            <h2 className="title">LOGYCA</h2>
+            <h1 className="logo-title"><img src={logo1} alt="Logo de Logyca"></img></h1>
+            <h2 className="title">Acceso</h2>
+            <form className="login-form" onSubmit={handleSubmit}>
+                {submitted && valid ? <div className="success-menssage">Excelente! Iniciando Sesión </div>: null}
+                <label htmlFor="email">Email</label>
+                <input value={user} onChange={(e) => setUser(e.target.value)}type="email" placeholder="Username" id="user" name="user" />
+                {submitted && !user ? <span>Porfavor rellene con su nombre de usuario</span>: null}
+                <label htmlFor="password">Contraseña</label>
+                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Ingresa tu contraseña" id="password" name="password" />
+                {submitted && !pass? <span>Porfavor rellene con una contraseña</span>: null}
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <button className="link-btn" onClick={() => props.onFormSwitch('register')}>¿No tienes una cuenta? Registrate Aquí</button>
+        </div> 
+    );   
 }

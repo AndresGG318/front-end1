@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import logo from './logo.svg';
 import './App.css';
 import { Login } from "./Login";
 import { Register } from "./Register";
-import JSONDATA from "./MOCK_DATA.json"
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');

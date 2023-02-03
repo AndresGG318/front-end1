@@ -1,10 +1,4 @@
-/* Aquí empieza el header de la pagina web*/
-
-.header {
-  padding: 20px 0; 
-}
-
-/* Aquí empieza el main de la pagina web*/
+/* Aquí empieza el body de la pagina web*/
 
 .App {
   text-align: center;
@@ -13,12 +7,24 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: linear-gradient(#ffffff,#34aeff,#000000);
+  background-image: linear-gradient(#ffffff,#34aeff,#000000)
 }
 
 .auth-form-container, .login-form, .register-form {
   display: flex;
   flex-direction: column;
+}
+
+.success-menssage {
+  color: #00ff2a;
+}
+
+span {
+  color: #ff0000;
+}
+
+.logo-title {
+  padding: 20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -60,8 +66,3 @@ button {
   color: black;
   text-decoration: underline;
 }
-
-/* Aquí empieza el footer de la pagina web*/
-
-
-
