@@ -30,7 +30,7 @@ export const Login = (props) => {
             <form className="login-form" onSubmit={handleSubmit}>
                 {submitted && valid ? <div className="success-menssage">Excelente! Iniciando Sesión </div>: null}
                 <label htmlFor="email">Email</label>
-                <input value={user} onChange={(e) => setUser(e.target.value)}type="email" placeholder="Username" id="user" name="user" />
+                <input value={user} onChange={(e) => setUser(e.target.value)} type="email" placeholder="Username" id="user" name="user" />
                 {submitted && !user ? <span>Porfavor rellene con su nombre de usuario</span>: null}
                 <label htmlFor="password">Contraseña</label>
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Ingresa tu contraseña" id="password" name="password" />
