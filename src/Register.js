@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo1 from "./assets/img/Logyca-removebg-preview.png"
 
 export const Register = (props) => {
     const [email, setEmail] = useState('');
@@ -23,7 +22,6 @@ export const Register = (props) => {
         
         <div className="auth-form-container">
             <h2 className="title">LOGYCA</h2>
-            <h1 className="logo-title"><img src={logo1} alt="Logo de Logyca"></img></h1>
             <h2 className="title">Registro</h2>
             <form className="register-form" onSubmit={handleSubmit}>
                 {submitted && valid ? <div className="success-menssage">Excelente! Gracias por registrarte  </div>: null}
