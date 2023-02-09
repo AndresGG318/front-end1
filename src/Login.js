@@ -16,9 +16,7 @@ export const Login = (props) => {
             }).catch((err)=>{
             toast.error('Inicio de Sesion fallida debido a: ' + err.message);
             });
-
         }
-        
     }
     const validate = () => {
         let result= true;
