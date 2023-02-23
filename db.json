@@ -1,10 +1,31 @@
 {
-    "user": [
-        {
-            "id":"1",
-            "name":"Andres",
-            "password":"12345",
-            "email":"afguevara@gmail.com"
-        }
-    ]
+  "user": [
+    {
+      "id": "AndresGG318",
+      "name": "Andres Felipe Guevara Garcia",
+      "password": "xXpilar801420Xx.",
+      "email": "afguevara318@gmail.com",
+      "phone": "3182440552",
+      "country": "",
+      "address": "Trasv 2 #48 J 40 sur"
+    },
+    {
+      "id": "andres",
+      "name": "andres guevara",
+      "password": "12345",
+      "email": "afguevara318@gmail.com",
+      "phone": "3214569874",
+      "country": "",
+      "address": ""
+    },
+    {
+      "id": "Juan ",
+      "name": "Juan Guevara",
+      "password": "123456",
+      "email": "juan@gmail.com",
+      "phone": "3216547895",
+      "country": "colombia",
+      "address": "qwerewrre"
+    }
+  ]
 }

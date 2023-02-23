@@ -1,68 +1,52 @@
-/* Aquí empieza el body de la pagina web*/
-
 .App {
-  text-align: center;
-  display: flex;
-  min-height: 110vh;
+  color: rgb(231, 186, 37);
+  text-align: left;
+  min-height: 120vh;
   align-items: center;
   justify-content: center;
-  color: black;
-  background-image: linear-gradient(#ffffff,#34aeff,#000000)
+  background : lightgray;
 }
 
-.auth-form-container, .login-form, .register-form {
-  display: flex;
-  flex-direction: column;
+::placeholder {
+  color:gold !important;
 }
 
-.success-menssage {
-  color: #00ff2a;
+/* .page {
+  background : rgb(23, 77, 158);
+  background : rgb(13, 49, 104);
+  background : rgb(9, 34, 73)
+
+  linear-gradient(#ffffff,#34aeff,#000000)
+} */
+
+
+.errmsg {
+  color: red;
 }
 
-span {
-  color: #ff0000;
+.header {
+  width: 100%;
+  background-color: rgb(231, 186, 37);
+  color: #081429 !important;
+  padding: 1%;
 }
 
-.logo-title {
-  padding: 20px;
+.body {
+  color: white !important;
 }
 
-@media screen and (min-width: 600px) {
-  .auth-form-container {
-    padding: 5rem;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    width: auto;
-    margin: 0.5rem;
-  }
-}
-.title{
-  color: black;
-}
-label {
-  text-align: left;
-  padding: 0.25rem 0;
-  color:black
+.footer{
+  background-color: rgb(231, 186, 37);
 }
 
-input {
-  margin: 0.5rem 0;
-  padding: 1rem;
-  border: none;
-  border-radius: 10px;
+a {
+  text-decoration: none !important;
+  color: white;
+  padding: 2%;
 }
 
-button {
-  border: none;
-  background-color: black;
-  padding: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-.link-btn {
-  background: none;
-  color: black;
-  text-decoration: underline;
+app-check{
+  height: 20px;
+  width: 20px;
+  
 }
